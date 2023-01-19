@@ -14,3 +14,9 @@ RSpec.describe "testing 'make_snippet' method" do
     the skies are clear and blue.")).to eq "Today is another day of ..."
   end
 end
+
+RSpec.describe "testing 'count_words' method" do
+  it "tests if the method will return the correct number of words" do
+    expect(count_words("something cool")).to eq 2
+  end
+end
